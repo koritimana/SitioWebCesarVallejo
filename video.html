@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+  <style>
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+    }
+
+    .video-container video {
+      width: 800px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .col-lg-6 {
+      width: 50%;
+      float: left;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .text-description {
+      text-align: justify;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .col-lg-6 {
+        width: 100%;
+        float: none;
+      }
+      
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .text-description {
+        width: auto;
+        max-width: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <h1 class="green-header">Video - César Vallejo</h1>
+  </header>
+  <main>
+    <section class="parallax bg">
+      <div class="video-container">
+        <video src="img/Historia Gráfica (Biografía de César Vallejo).mp4" controls>
+          Tu navegador no admite la etiqueta de video.
+        </video>
+    </section>
+  </main>
+  
+</body>
+</html>
